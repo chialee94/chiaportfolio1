@@ -555,14 +555,14 @@ Center the thank-you section
     }
 
     .section-images {
-        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-        gap: 30px;
-        margin-bottom: 50px;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 25px;
+        margin-bottom: 40px;
     }
 
     .cards .card {
-        margin-top: 25px;
-        padding: 15px;
+        margin-top: 20px;
+        padding: 14px;
         text-align: center; 
     }
 }
@@ -582,13 +582,20 @@ Center the thank-you section
         min-width: auto;
     }
 
-    .cards { gap: 15px; }
-    .cards .card { margin-top: 20px; padding: 14px; text-align: center; }
+    .cards { 
+        gap: 15px; 
+    }
+
+    .cards .card { 
+        margin-top: 18px; 
+        padding: 14px; 
+        text-align: center; 
+    }
 
     .section-images {
         grid-template-columns: 1fr;
         gap: 20px;
-        margin-bottom: 40px;
+        margin-bottom: 35px;
     }
 
     .project-sidebar {
@@ -603,7 +610,9 @@ Center the thank-you section
 
 /* Phones (600px) */
 @media (max-width: 600px) {
-    body { font-size: 16px; }
+    body { 
+        font-size: 16px; 
+    }
 
     .nav-container {
         justify-content: center;
@@ -613,29 +622,72 @@ Center the thank-you section
         gap: 15px; 
     }
 
+    /* Hide logo */
     .logo-text { 
         display: none;
     }
 
-    .hero-buttons { flex-direction: column; }
+    /* 🔥 Hide sidebar on mobile */
+    .project-sidebar {
+        display: none;
+    }
+
+    /* Ensure main content fills space */
+    .project-main {
+        width: 100%;
+    }
+
+    .hero-buttons { 
+        flex-direction: column; 
+        width: 100%;
+    }
 
     .hero-container,
-    .resume-container { padding: 20px 10px; }
+    .resume-container { 
+        padding: 20px 10px; 
+    }
 
-    h1, h2, h3 { text-align: center; }
+    h1, h2, h3 { 
+        text-align: center; 
+    }
 
-    .section-images { grid-template-columns: 1fr; gap: 15px; margin-bottom: 30px; }
+    .section-images { 
+        grid-template-columns: 1fr; 
+        gap: 15px; 
+        margin-bottom: 30px; 
+    }
 
-    .cards .card { padding: 12px; }
+    .cards .card { 
+        padding: 12px; 
+    }
 
-    .tooltip-text { max-width: 150px; word-wrap: break-word; }
+    .tooltip-text { 
+        display: none; 
+    }
 }
 
 /* Small Phones (480px) */
 @media (max-width: 480px) {
-    .cards .card { margin-top: 15px; padding: 10px; }
-    .hero-buttons { width: 100%; }
-    .project-info .cta-btn { width: 100%; text-align: center; }
-    .logo-text { display: none; }
-    .tooltip-text { max-width: 120px; }
+    .cards .card { 
+        margin-top: 15px; 
+        padding: 10px; 
+    }
+
+    .hero-buttons { 
+        width: 100%; 
+    }
+
+    .project-info .cta-btn { 
+        width: 100%; 
+        text-align: center; 
+    }
+
+    /* extra safety */
+    .logo-text { 
+        display: none; 
+    }
+
+    .tooltip-text { 
+        display: none; 
+    }
 }
