@@ -518,6 +518,12 @@ aside {
         position: relative;
         top: 0;
         margin-bottom: 20px;
+        text-align: center; 
+    }
+
+    .project-sidebar ul {
+        display: inline-block;
+        padding: 0;
     }
 
     .project-info .cta-btn {
@@ -542,7 +548,7 @@ aside {
     .cards .card {
         margin-top: 25px;
         padding: 15px;
-        text-align: center; /* center content on tablets */
+        text-align: center; 
     }
 }
 
@@ -569,6 +575,15 @@ aside {
         gap: 20px;
         margin-bottom: 40px;
     }
+
+    .project-sidebar {
+        text-align: center;
+    }
+
+    .project-sidebar ul {
+        display: inline-block;
+        padding: 0;
+    }
 }
 
 /* Phones (600px) */
@@ -586,6 +601,9 @@ aside {
     .section-images { grid-template-columns: 1fr; gap: 15px; margin-bottom: 30px; }
 
     .cards .card { padding: 12px; }
+
+    .logo-text { font-size: 20px; }
+    .tooltip-text { max-width: 150px; word-wrap: break-word; }
 }
 
 /* Small Phones (480px) */
@@ -593,4 +611,6 @@ aside {
     .cards .card { margin-top: 15px; padding: 10px; }
     .hero-buttons { width: 100%; }
     .project-info .cta-btn { width: 100%; text-align: center; }
+    .logo-text { font-size: 18px; }
+    .tooltip-text { max-width: 120px; }
 }
