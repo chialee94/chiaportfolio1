@@ -621,6 +621,13 @@ Center the thank-you section
     .tooltip-text { max-width: 150px; word-wrap: break-word; }
 }
 
+/* Hide logo on small screens */
+@media (max-width: 600px) {
+    .logo-text {
+        display: none;
+    }
+}
+
 /* Small Phones (480px) */
 @media (max-width: 480px) {
     .cards .card { margin-top: 15px; padding: 10px; }
