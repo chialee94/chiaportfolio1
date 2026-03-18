@@ -605,7 +605,18 @@ Center the thank-you section
 @media (max-width: 600px) {
     body { font-size: 16px; }
 
-    .nav-links { gap: 15px; }
+    .nav-container {
+        justify-content: center;
+    }
+
+    .nav-links { 
+        gap: 15px; 
+    }
+
+    .logo-text { 
+        display: none;
+    }
+
     .hero-buttons { flex-direction: column; }
 
     .hero-container,
@@ -617,15 +628,7 @@ Center the thank-you section
 
     .cards .card { padding: 12px; }
 
-    .logo-text { font-size: 20px; }
     .tooltip-text { max-width: 150px; word-wrap: break-word; }
-}
-
-/* Hide logo on small screens */
-@media (max-width: 600px) {
-    .logo-text {
-        display: none;
-    }
 }
 
 /* Small Phones (480px) */
@@ -633,6 +636,6 @@ Center the thank-you section
     .cards .card { margin-top: 15px; padding: 10px; }
     .hero-buttons { width: 100%; }
     .project-info .cta-btn { width: 100%; text-align: center; }
-    .logo-text { font-size: 18px; }
+    .logo-text { display: none; }
     .tooltip-text { max-width: 120px; }
 }
