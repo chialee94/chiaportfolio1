@@ -622,17 +622,14 @@ Center the thank-you section
         gap: 15px; 
     }
 
-    /* Hide logo */
     .logo-text { 
         display: none;
     }
 
-    /* 🔥 Hide sidebar on mobile */
     .project-sidebar {
         display: none;
     }
 
-    /* Ensure main content fills space */
     .project-main {
         width: 100%;
     }
@@ -681,10 +678,13 @@ Center the thank-you section
         width: 100%; 
         text-align: center; 
     }
-
-    /* extra safety */
+    
     .logo-text { 
         display: none; 
+    }
+
+    .project-sidebar {
+        display: none;
     }
 
     .tooltip-text { 
