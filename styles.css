@@ -336,14 +336,14 @@ p, li {
     background-color: #1C1C1C;
     color: white;
     border-radius: 12px;
-    padding: 10px;
+    padding: 15px; /* increased padding for small screens */
     flex: 1 1 300px;
     max-width: 1200px;
 }
 
 .card.research,
 .card.wireframe,
-.card.visual-design
+.card.visual-design,
 .card.takeaways {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -541,6 +541,8 @@ aside {
 
     .cards .card {
         margin-top: 25px;
+        padding: 15px;
+        text-align: center; /* center content on tablets */
     }
 }
 
@@ -560,7 +562,7 @@ aside {
     }
 
     .cards { gap: 15px; }
-    .cards .card { margin-top: 20px; }
+    .cards .card { margin-top: 20px; padding: 14px; text-align: center; }
 
     .section-images {
         grid-template-columns: 1fr;
@@ -582,9 +584,13 @@ aside {
     h1, h2, h3 { text-align: center; }
 
     .section-images { grid-template-columns: 1fr; gap: 15px; margin-bottom: 30px; }
+
+    .cards .card { padding: 12px; }
 }
 
 /* Small Phones (480px) */
 @media (max-width: 480px) {
-    .cards .card { margin-top: 15px; }
+    .cards .card { margin-top: 15px; padding: 10px; }
+    .hero-buttons { width: 100%; }
+    .project-info .cta-btn { width: 100%; text-align: center; }
 }
